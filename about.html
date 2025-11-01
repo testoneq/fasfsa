@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posorniki</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Добавляем отступ для сайдбаров */
+        .sidebar {
+            margin-left: 20px; /* Отступ слева от правого сайдбара */
+            margin-right: 20px; /* Отступ справа от левого сайдбара */
+        }
+
+        .container {
+            display: flex; /* Используем flexbox для размещения сайдбаров и основного контента */
+            justify-content: space-between; /* Распределяем пространство между элементами */
+        }
+
+        .container > p { /*стиль для текста, что бы он был по середине и был отступ от краев*/
+            width: 50%;
+            margin: 0 auto;
+        }
+        .center-title { /* CSS-класс для центрирования заголовка */
+          text-align: center;
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pozorniki.ru</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </nav><br>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar fixed-sidebar">
+            <p><a href="https://www.ipweb.ru/?tga7561146742"><img src="ipweb_160_600_001.png" width="160" height="600" border="0" alt="Реклама IPWeb 1"></a></p>
+            <p><a href="https://www.ipweb.ru/?tga7561146742"><img src="ipweb_160_600_003.png" width="160" height="600" border="0" alt="Реклама IPWeb 2"></a></p>
+        </aside>
+        <p><br><br>
+       <b class="center-title">О нас</b><br><br>
+    Вы можете написать нам по адресу: helppozorniki@yandex.ru<br>
+Мы с радостью примем ваши истории и опубликуем их на сайте, совершенно бесплатно!<br>
+К сожалению монетезации контента пока что нет, но мы уже работаем над этим!</p>
+        <aside class="sidebar fixed-sidebar">
+            <p><a href="https://www.ipweb.ru/?tga7561146742"><img src="ipweb_160_600_002.png" width="160" height="600" border="0" alt="Реклама IPWeb 3"></a></p>
+            <p><a href="https://www.ipweb.ru/?tga7561146742"><img src="ipweb_160_600_001.png" width="160" height="600" border="0" alt="Реклама IPWeb 4"></a></p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025. Все права защищены.</p>
+    </footer>
+</body>
+</html>
